@@ -16,7 +16,7 @@
     <p><a class="btn btn-primary" href="/{{ customer.id }}/edit/">Edit</a></p>
 
     <h2>Reservations</h2>
-    {% if reservations %}
+    {% if reservations[0] %}
     <ul>
       {% for reservation in reservations %}
       <li><b>{{ reservation.getformattedStartAt() }}</b> for {{ reservation.numGuests }}</li>
